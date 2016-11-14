@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2556A9EA1DD49F8300314C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2556A9E81DD49F8300314C0D /* Main.storyboard */; };
+		2556A9ED1DD49F8300314C0D /* BuDeJie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2556A9EB1DD49F8300314C0D /* BuDeJie.xcdatamodeld */; };
+		2556A9EF1DD49F8300314C0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2556A9EE1DD49F8300314C0D /* Assets.xcassets */; };
+		2556A9F21DD49F8300314C0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2556A9F01DD49F8300314C0D /* LaunchScreen.storyboard */; };
+		2556AA121DD4C31400314C0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA0C1DD4C31400314C0D /* AppDelegate.m */; };
+		2556AA131DD4C31400314C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA0D1DD4C31400314C0D /* main.m */; };
+		2556AA171DD4C3DB00314C0D /* TAOEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA151DD4C3DB00314C0D /* TAOEssenceViewController.m */; };
+		2556AA181DD4C3DB00314C0D /* TAOEssenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2556AA161DD4C3DB00314C0D /* TAOEssenceViewController.xib */; };
+		2556AA1C1DD4C3F500314C0D /* TAOFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA1A1DD4C3F500314C0D /* TAOFriendTrendViewController.m */; };
+		2556AA1D1DD4C3F500314C0D /* TAOFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2556AA1B1DD4C3F500314C0D /* TAOFriendTrendViewController.xib */; };
+		2556AA201DD4C42800314C0D /* TAOMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA1F1DD4C42800314C0D /* TAOMeViewController.m */; };
+		2556AA241DD4C44100314C0D /* TAONewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA221DD4C44100314C0D /* TAONewViewController.m */; };
+		2556AA251DD4C44100314C0D /* TAONewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2556AA231DD4C44100314C0D /* TAONewViewController.xib */; };
+		2556AA291DD4C45F00314C0D /* TAOPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA271DD4C45F00314C0D /* TAOPublishViewController.m */; };
+		2556AA2A1DD4C45F00314C0D /* TAOPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2556AA281DD4C45F00314C0D /* TAOPublishViewController.xib */; };
+		2556AA311DD537E600314C0D /* TAOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA301DD537E600314C0D /* TAOTabBarController.m */; };
+		2556AA351DD5F88500314C0D /* UIImage+TAOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA341DD5F88500314C0D /* UIImage+TAOImage.m */; };
+		2556AA381DD8C25900314C0D /* TAOTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA371DD8C25900314C0D /* TAOTabBar.m */; };
+		2556AA3B1DD9317E00314C0D /* UIView+TAOFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA3A1DD9317E00314C0D /* UIView+TAOFrame.m */; };
+		2556AA3F1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA3E1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m */; };
+		2556AA421DDA7C5700314C0D /* TAONavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA411DDA7C5700314C0D /* TAONavigationViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2556A9DC1DD49F8300314C0D /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2556A9E91DD49F8300314C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2556A9EC1DD49F8300314C0D /* BuDeJie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuDeJie.xcdatamodel; sourceTree = "<group>"; };
+		2556A9EE1DD49F8300314C0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2556A9F11DD49F8300314C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2556A9F31DD49F8300314C0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2556AA0B1DD4C31400314C0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2556AA0C1DD4C31400314C0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2556AA0D1DD4C31400314C0D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2556AA141DD4C3DB00314C0D /* TAOEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOEssenceViewController.h; sourceTree = "<group>"; };
+		2556AA151DD4C3DB00314C0D /* TAOEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOEssenceViewController.m; sourceTree = "<group>"; };
+		2556AA161DD4C3DB00314C0D /* TAOEssenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAOEssenceViewController.xib; sourceTree = "<group>"; };
+		2556AA191DD4C3F500314C0D /* TAOFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOFriendTrendViewController.h; sourceTree = "<group>"; };
+		2556AA1A1DD4C3F500314C0D /* TAOFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOFriendTrendViewController.m; sourceTree = "<group>"; };
+		2556AA1B1DD4C3F500314C0D /* TAOFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAOFriendTrendViewController.xib; sourceTree = "<group>"; };
+		2556AA1E1DD4C42800314C0D /* TAOMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOMeViewController.h; sourceTree = "<group>"; };
+		2556AA1F1DD4C42800314C0D /* TAOMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOMeViewController.m; sourceTree = "<group>"; };
+		2556AA211DD4C44100314C0D /* TAONewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAONewViewController.h; sourceTree = "<group>"; };
+		2556AA221DD4C44100314C0D /* TAONewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAONewViewController.m; sourceTree = "<group>"; };
+		2556AA231DD4C44100314C0D /* TAONewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAONewViewController.xib; sourceTree = "<group>"; };
+		2556AA261DD4C45F00314C0D /* TAOPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOPublishViewController.h; sourceTree = "<group>"; };
+		2556AA271DD4C45F00314C0D /* TAOPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOPublishViewController.m; sourceTree = "<group>"; };
+		2556AA281DD4C45F00314C0D /* TAOPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TAOPublishViewController.xib; sourceTree = "<group>"; };
+		2556AA2F1DD537E600314C0D /* TAOTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOTabBarController.h; sourceTree = "<group>"; };
+		2556AA301DD537E600314C0D /* TAOTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOTabBarController.m; sourceTree = "<group>"; };
+		2556AA331DD5F88500314C0D /* UIImage+TAOImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TAOImage.h"; sourceTree = "<group>"; };
+		2556AA341DD5F88500314C0D /* UIImage+TAOImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TAOImage.m"; sourceTree = "<group>"; };
+		2556AA361DD8C25900314C0D /* TAOTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAOTabBar.h; sourceTree = "<group>"; };
+		2556AA371DD8C25900314C0D /* TAOTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAOTabBar.m; sourceTree = "<group>"; };
+		2556AA391DD9317E00314C0D /* UIView+TAOFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TAOFrame.h"; sourceTree = "<group>"; };
+		2556AA3A1DD9317E00314C0D /* UIView+TAOFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TAOFrame.m"; sourceTree = "<group>"; };
+		2556AA3C1DD9368E00314C0D /* BuDeJie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
+		2556AA3D1DDA07F100314C0D /* UIBarButtonItem+TAOItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TAOItem.h"; sourceTree = "<group>"; };
+		2556AA3E1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TAOItem.m"; sourceTree = "<group>"; };
+		2556AA401DDA7C5700314C0D /* TAONavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAONavigationViewController.h; sourceTree = "<group>"; };
+		2556AA411DDA7C5700314C0D /* TAONavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAONavigationViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2556A9D91DD49F8300314C0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2556A9D31DD49F8300314C0D = {
+			isa = PBXGroup;
+			children = (
+				2556A9DE1DD49F8300314C0D /* BuDeJie */,
+				2556A9DD1DD49F8300314C0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2556A9DD1DD49F8300314C0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2556A9DC1DD49F8300314C0D /* BuDeJie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2556A9DE1DD49F8300314C0D /* BuDeJie */ = {
+			isa = PBXGroup;
+			children = (
+				2556A9F91DD4C31400314C0D /* Classes */,
+				2556AA0A1DD4C31400314C0D /* Other */,
+				2556A9E81DD49F8300314C0D /* Main.storyboard */,
+				2556A9EE1DD49F8300314C0D /* Assets.xcassets */,
+				2556A9F01DD49F8300314C0D /* LaunchScreen.storyboard */,
+				2556A9F31DD49F8300314C0D /* Info.plist */,
+				2556A9EB1DD49F8300314C0D /* BuDeJie.xcdatamodeld */,
+				2556A9DF1DD49F8300314C0D /* Supporting Files */,
+			);
+			path = BuDeJie;
+			sourceTree = "<group>";
+		};
+		2556A9DF1DD49F8300314C0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2556A9F91DD4C31400314C0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA2B1DD5377000314C0D /* Main(主要) */,
+				2556A9FA1DD4C31400314C0D /* Essence(精华) */,
+				2556A9FE1DD4C31400314C0D /* FriendTrend(关注) */,
+				2556AA021DD4C31400314C0D /* Me(我) */,
+				2556AA061DD4C31400314C0D /* New(新帖) */,
+				2556AA0E1DD4C31400314C0D /* Publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2556A9FA1DD4C31400314C0D /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				2556A9FB1DD4C31400314C0D /* Controller */,
+				2556A9FC1DD4C31400314C0D /* Model */,
+				2556A9FD1DD4C31400314C0D /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		2556A9FB1DD4C31400314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA141DD4C3DB00314C0D /* TAOEssenceViewController.h */,
+				2556AA151DD4C3DB00314C0D /* TAOEssenceViewController.m */,
+				2556AA161DD4C3DB00314C0D /* TAOEssenceViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2556A9FC1DD4C31400314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2556A9FD1DD4C31400314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2556A9FE1DD4C31400314C0D /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				2556A9FF1DD4C31400314C0D /* Controller */,
+				2556AA001DD4C31400314C0D /* Model */,
+				2556AA011DD4C31400314C0D /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		2556A9FF1DD4C31400314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA191DD4C3F500314C0D /* TAOFriendTrendViewController.h */,
+				2556AA1A1DD4C3F500314C0D /* TAOFriendTrendViewController.m */,
+				2556AA1B1DD4C3F500314C0D /* TAOFriendTrendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2556AA001DD4C31400314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2556AA011DD4C31400314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2556AA021DD4C31400314C0D /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA031DD4C31400314C0D /* Controller */,
+				2556AA041DD4C31400314C0D /* Model */,
+				2556AA051DD4C31400314C0D /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		2556AA031DD4C31400314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA1E1DD4C42800314C0D /* TAOMeViewController.h */,
+				2556AA1F1DD4C42800314C0D /* TAOMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2556AA041DD4C31400314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2556AA051DD4C31400314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2556AA061DD4C31400314C0D /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA071DD4C31400314C0D /* Controller */,
+				2556AA081DD4C31400314C0D /* Model */,
+				2556AA091DD4C31400314C0D /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		2556AA071DD4C31400314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA211DD4C44100314C0D /* TAONewViewController.h */,
+				2556AA221DD4C44100314C0D /* TAONewViewController.m */,
+				2556AA231DD4C44100314C0D /* TAONewViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2556AA081DD4C31400314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2556AA091DD4C31400314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2556AA0A1DD4C31400314C0D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA321DD5F1AC00314C0D /* Categroy */,
+				2556AA0B1DD4C31400314C0D /* AppDelegate.h */,
+				2556AA0C1DD4C31400314C0D /* AppDelegate.m */,
+				2556AA0D1DD4C31400314C0D /* main.m */,
+			);
+			name = Other;
+			path = Classes/Other;
+			sourceTree = "<group>";
+		};
+		2556AA0E1DD4C31400314C0D /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA0F1DD4C31400314C0D /* Controller */,
+				2556AA101DD4C31400314C0D /* Model */,
+				2556AA111DD4C31400314C0D /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		2556AA0F1DD4C31400314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA261DD4C45F00314C0D /* TAOPublishViewController.h */,
+				2556AA271DD4C45F00314C0D /* TAOPublishViewController.m */,
+				2556AA281DD4C45F00314C0D /* TAOPublishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2556AA101DD4C31400314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2556AA111DD4C31400314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2556AA2B1DD5377000314C0D /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA2E1DD537AA00314C0D /* Controller */,
+				2556AA2D1DD537A100314C0D /* View */,
+				2556AA2C1DD5378800314C0D /* Model */,
+			);
+			name = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		2556AA2C1DD5378800314C0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2556AA2D1DD537A100314C0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA361DD8C25900314C0D /* TAOTabBar.h */,
+				2556AA371DD8C25900314C0D /* TAOTabBar.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2556AA2E1DD537AA00314C0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA2F1DD537E600314C0D /* TAOTabBarController.h */,
+				2556AA301DD537E600314C0D /* TAOTabBarController.m */,
+				2556AA401DDA7C5700314C0D /* TAONavigationViewController.h */,
+				2556AA411DDA7C5700314C0D /* TAONavigationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2556AA321DD5F1AC00314C0D /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				2556AA331DD5F88500314C0D /* UIImage+TAOImage.h */,
+				2556AA341DD5F88500314C0D /* UIImage+TAOImage.m */,
+				2556AA391DD9317E00314C0D /* UIView+TAOFrame.h */,
+				2556AA3A1DD9317E00314C0D /* UIView+TAOFrame.m */,
+				2556AA3C1DD9368E00314C0D /* BuDeJie.pch */,
+				2556AA3D1DDA07F100314C0D /* UIBarButtonItem+TAOItem.h */,
+				2556AA3E1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m */,
+			);
+			name = Categroy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2556A9DB1DD49F8300314C0D /* BuDeJie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2556A9F61DD49F8300314C0D /* Build configuration list for PBXNativeTarget "BuDeJie" */;
+			buildPhases = (
+				2556A9D81DD49F8300314C0D /* Sources */,
+				2556A9D91DD49F8300314C0D /* Frameworks */,
+				2556A9DA1DD49F8300314C0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuDeJie;
+			productName = BuDeJie;
+			productReference = 2556A9DC1DD49F8300314C0D /* BuDeJie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2556A9D41DD49F8300314C0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TAO;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = etcxm;
+				TargetAttributes = {
+					2556A9DB1DD49F8300314C0D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2XN8U4HGZV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2556A9D71DD49F8300314C0D /* Build configuration list for PBXProject "BuDeJie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2556A9D31DD49F8300314C0D;
+			productRefGroup = 2556A9DD1DD49F8300314C0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2556A9DB1DD49F8300314C0D /* BuDeJie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2556A9DA1DD49F8300314C0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2556A9F21DD49F8300314C0D /* LaunchScreen.storyboard in Resources */,
+				2556AA1D1DD4C3F500314C0D /* TAOFriendTrendViewController.xib in Resources */,
+				2556AA251DD4C44100314C0D /* TAONewViewController.xib in Resources */,
+				2556AA2A1DD4C45F00314C0D /* TAOPublishViewController.xib in Resources */,
+				2556A9EF1DD49F8300314C0D /* Assets.xcassets in Resources */,
+				2556AA181DD4C3DB00314C0D /* TAOEssenceViewController.xib in Resources */,
+				2556A9EA1DD49F8300314C0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2556A9D81DD49F8300314C0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2556AA1C1DD4C3F500314C0D /* TAOFriendTrendViewController.m in Sources */,
+				2556AA311DD537E600314C0D /* TAOTabBarController.m in Sources */,
+				2556AA3F1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m in Sources */,
+				2556AA421DDA7C5700314C0D /* TAONavigationViewController.m in Sources */,
+				2556AA381DD8C25900314C0D /* TAOTabBar.m in Sources */,
+				2556AA3B1DD9317E00314C0D /* UIView+TAOFrame.m in Sources */,
+				2556AA241DD4C44100314C0D /* TAONewViewController.m in Sources */,
+				2556AA201DD4C42800314C0D /* TAOMeViewController.m in Sources */,
+				2556AA351DD5F88500314C0D /* UIImage+TAOImage.m in Sources */,
+				2556A9ED1DD49F8300314C0D /* BuDeJie.xcdatamodeld in Sources */,
+				2556AA131DD4C31400314C0D /* main.m in Sources */,
+				2556AA171DD4C3DB00314C0D /* TAOEssenceViewController.m in Sources */,
+				2556AA121DD4C31400314C0D /* AppDelegate.m in Sources */,
+				2556AA291DD4C45F00314C0D /* TAOPublishViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2556A9E81DD49F8300314C0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2556A9E91DD49F8300314C0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2556A9F01DD49F8300314C0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2556A9F11DD49F8300314C0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2556A9F41DD49F8300314C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2556A9F51DD49F8300314C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2556A9F71DD49F8300314C0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2XN8U4HGZV;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuDeJie/Classes/Other/BuDeJie.pch";
+				INFOPLIST_FILE = BuDeJie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.etcxm.BuDeJie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2556A9F81DD49F8300314C0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 2XN8U4HGZV;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BuDeJie/Classes/Other/BuDeJie.pch";
+				INFOPLIST_FILE = BuDeJie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.etcxm.BuDeJie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2556A9D71DD49F8300314C0D /* Build configuration list for PBXProject "BuDeJie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2556A9F41DD49F8300314C0D /* Debug */,
+				2556A9F51DD49F8300314C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2556A9F61DD49F8300314C0D /* Build configuration list for PBXNativeTarget "BuDeJie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2556A9F71DD49F8300314C0D /* Debug */,
+				2556A9F81DD49F8300314C0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2556A9EB1DD49F8300314C0D /* BuDeJie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2556A9EC1DD49F8300314C0D /* BuDeJie.xcdatamodel */,
+			);
+			currentVersion = 2556A9EC1DD49F8300314C0D /* BuDeJie.xcdatamodel */;
+			path = BuDeJie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2556A9D41DD49F8300314C0D /* Project object */;
+}
