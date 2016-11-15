@@ -28,6 +28,7 @@
 		2556AA3B1DD9317E00314C0D /* UIView+TAOFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA3A1DD9317E00314C0D /* UIView+TAOFrame.m */; };
 		2556AA3F1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA3E1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m */; };
 		2556AA421DDA7C5700314C0D /* TAONavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2556AA411DDA7C5700314C0D /* TAONavigationViewController.m */; };
+		2B22AA68F0EC153AC8D04AB6 /* libPods-BuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8620B35A72A0BADAD7D6059F /* libPods-BuDeJie.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,9 @@
 		2556AA3E1DDA07F100314C0D /* UIBarButtonItem+TAOItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TAOItem.m"; sourceTree = "<group>"; };
 		2556AA401DDA7C5700314C0D /* TAONavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAONavigationViewController.h; sourceTree = "<group>"; };
 		2556AA411DDA7C5700314C0D /* TAONavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAONavigationViewController.m; sourceTree = "<group>"; };
+		43EEE6B39227E9D313FFEAAE /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
+		7D4696FD179691C661A7682C /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
+		8620B35A72A0BADAD7D6059F /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,17 +78,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B22AA68F0EC153AC8D04AB6 /* libPods-BuDeJie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7D41C1260774F209FAB69B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D4696FD179691C661A7682C /* Pods-BuDeJie.debug.xcconfig */,
+				43EEE6B39227E9D313FFEAAE /* Pods-BuDeJie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2556A9D31DD49F8300314C0D = {
 			isa = PBXGroup;
 			children = (
 				2556A9DE1DD49F8300314C0D /* BuDeJie */,
 				2556A9DD1DD49F8300314C0D /* Products */,
+				1D7D41C1260774F209FAB69B /* Pods */,
+				2DE0561693C929EB047E975F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -363,6 +379,14 @@
 			name = Categroy;
 			sourceTree = "<group>";
 		};
+		2DE0561693C929EB047E975F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8620B35A72A0BADAD7D6059F /* libPods-BuDeJie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,9 +394,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2556A9F61DD49F8300314C0D /* Build configuration list for PBXNativeTarget "BuDeJie" */;
 			buildPhases = (
+				17F8F9DCD6DAD61C1DD42341 /* [CP] Check Pods Manifest.lock */,
 				2556A9D81DD49F8300314C0D /* Sources */,
 				2556A9D91DD49F8300314C0D /* Frameworks */,
 				2556A9DA1DD49F8300314C0D /* Resources */,
+				9D44560B84C1AF2565565276 /* [CP] Embed Pods Frameworks */,
+				BCA1D98B9113402D420BFBA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -434,6 +461,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17F8F9DCD6DAD61C1DD42341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D44560B84C1AF2565565276 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA1D98B9113402D420BFBA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2556A9D81DD49F8300314C0D /* Sources */ = {
@@ -569,6 +644,7 @@
 		};
 		2556A9F71DD49F8300314C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4696FD179691C661A7682C /* Pods-BuDeJie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -583,6 +659,7 @@
 		};
 		2556A9F81DD49F8300314C0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EEE6B39227E9D313FFEAAE /* Pods-BuDeJie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
